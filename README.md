@@ -1,5 +1,5 @@
 # Monitor
-Monitor is just a simple wrapper around NWPathMonitor. The monitor will receiving network path updates. So, whenever the network changes, the closure will get called and you can respond to changes in internet connectivity.
+Monitor is just a simple wrapper around NWPathMonitor. The monitor will receiving network path updates. So, whenever the network changes, the closure will get called and you can respond to changes in internet connectivity.<br>
 Apple is strongly discouraging to use SCNetworkReachability. Instead you shpuld use NWPathMonitor. <br> The Network framework is really powerful. I can highly recommend to watch [this](https://developer.apple.com/videos/play/wwdc2018/715/) WWDC Session.
 
 # Usage
