@@ -1,11 +1,10 @@
 # Monitor
-Monitor is just a simple wrapper to check if there is a valid connection to the internet and which connection the user is currently using. 
+Monitor is just a simple wrapper around NWPathMonitor. The monitor will receiving network path updates. So, whenever the network changes, the closure will get called and you can respond to changes in internet connectivity.
 Apple is strongly discouraging to use SCNetworkReachability. Instead you shpuld use NWPathMonitor. <br> The Network framework is really powerful. I can highly recommend to watch [this](https://developer.apple.com/videos/play/wwdc2018/715/) WWDC Session.
 
 # Usage
 Just drop the Monitor.swift file into your project and use it as follows.
 The Closure is running on the **background queue**.
-The monitor will receiving network path updates. So, whenever the network changes, the closure will get called and you can respond to changes in internet connectivity.
 ```swift
 class ViewController: UIViewController {
 
